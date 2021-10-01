@@ -149,6 +149,8 @@ class _AuthCardState extends State<AuthCard> {
         errorMessage = "This email's existed";
       } else if (error.toString().contains("INVALID_EMAIL")) {
         errorMessage = "This email's invalid";
+      } else {
+        errorMessage = "Invalid";
       }
     } catch (error) {
       var errorMessage = "Could not authenticate";
